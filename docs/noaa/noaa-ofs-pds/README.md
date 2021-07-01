@@ -59,70 +59,106 @@ You can use the AWS Command Line Interface to list a particular day in the bucke
 </thead>
 <tbody>
 <tr>
-<td>cbofs</td>
+<td>CBOFS</td>
 <td>Chesapeake Bay</td>
 <td>48 hrs</td>
 <td>50m - 3km</td>
 </tr>
 <tr>
-<td>creofs</td>
+<td>CIOFS</td>
+<td>Cook Inlet</td>
+<td>48 hrs</td>
+<td>10m – 3.5km</td>
+</tr>
+<tr>
+<td>CREOFS</td>
 <td>Columbia River Estuary</td>
 <td>48 hrs</td>
 <td>100m - 4km</td>
 </tr>
 <tr>
-<td>dbofs</td>
+<td>DBOFS</td>
 <td>Delaware Bay</td>
 <td>48 hrs</td>
 <td>100m - 3km</td>
 </tr>
 <tr>
-<td>glofs</td>
+<td>GLOFS</td>
 <td>Great Lakes</td>
 <td>60 hrs</td>
 <td>5 km</td>
 </tr>
 <tr>
-<td>gomofs</td>
+<td>GoMOFS</td>
 <td>Gulf of Maine</td>
 <td>72 hrs</td>
 <td>700 m</td>
 </tr>
 <tr>
-<td>leofs</td>
+<td>LEOFS</td>
 <td>Lake Erie</td>
 <td>120 hrs</td>
 <td>400m - 4km</td>
 </tr>
 <tr>
-<td>negofs</td>
+<td>LMHOFS</td>
+<td>Lake Michigan and Huron</td>
+<td>120 hrs</td>
+<td>50m – 2.5km</td>
+</tr>
+<tr>
+<td>LOOFS</td>
+<td>Lake Ontario</td>
+<td>120 hrs</td>
+<td>50m – 2.5km</td>
+</tr>
+<tr>
+<td>LSOFS</td>
+<td>Lake Superior</td>
+<td>120 hrs</td>
+<td>250m – 2.5km</td>
+</tr>
+<tr>
+<td>NEGOFS</td>
 <td>North Eastern Gulf of Mexico</td>
 <td>48 hrs</td>
 <td>45m - 2km</td>
 </tr>
 <tr>
-<td>ngofs</td>
+<td>NGOFS</td>
 <td>Northern Gulf of Mexico</td>
 <td>54 hrs</td>
 <td>600m - 10km</td>
 </tr>
 <tr>
-<td>nwgofs</td>
+<td>NGOFS2</td>
+<td>Northern Gulf of Mexico</td>
+<td>48 hrs</td>
+<td>45m - 300m</td>
+</tr>
+<tr>
+<td>NWGOFS</td>
 <td>North Western Gulf of Mexico</td>
 <td>48 hrs</td>
 <td>60m - 3.5km</td>
 </tr>
 <tr>
-<td>sfbofs</td>
+<td>SFBOFS</td>
 <td>San Francisco Bay</td>
 <td>48 hrs</td>
 <td>100m - 4km</td>
 </tr>
 <tr>
-<td>tbofs</td>
+<td>TBOFS</td>
 <td>Tampa Bay</td>
 <td>48 hrs</td>
 <td>100m - 1.2km</td>
+</tr>
+<tr>
+<td>WCOFS</td>
+<td>West Coast</td>
+<td>72 hrs</td>
+<td>4km</td>
 </tr>
 </tbody>
 </table>

@@ -87,27 +87,27 @@ Note that this topic providers [filterable fields](https://docs.aws.amazon.com/s
 
 ```json
 {
-  Type: 'Notification',
-  MessageId: '',
-  TopicArn: 'arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable',
-  Message: {
-    S3Bucket: 'unidata-nexrad-level2-chunks',
-    Key: 'KDFX/602/20190510-143508-028-I',
-    SiteID: 'KDFX',
-    DateTime: '2019-05-10T14:35:08',
-    VolumeID: 602,
-    ChunkID: 28,
-    ChunkType: 'I',
-    L2Version: 'V06
+  "Type": "Notification",
+  "MessageId": "",
+  "TopicArn": "arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable",
+  "Message": {
+    "S3Bucket": "unidata-nexrad-level2-chunks",
+    "Key": "KDFX/602/20190510-143508-028-I",
+    "SiteID": "KDFX",
+    "DateTime": "2019-05-10T14:35:08",
+    "VolumeID": "602",
+    "ChunkID": "28",
+    "ChunkType": "I",
+    "L2Version": "V06"
   },
-  Timestamp: '2019-05-10T14:36:44.781Z',
-  MessageAttributes: {
-    SiteID: { Type: 'String', Value: 'KDFX' },
-    VolumeID: { Type: 'String', Value: '602' },
-    ChunkID: { Type: 'String', Value: '28' },
-    ChunkType: { Type: 'String', Value: 'I' },
-    L2Version: { Type: 'String', Value: 'V06' },
-    DateTime: { Type: 'String', Value: '2019-05-10T14:35:08' }
+  "Timestamp": "2019-05-10T14:36:44.781Z",
+  "MessageAttributes": {
+    "SiteID": { "Type": "String", "Value": "KDFX" },
+    "VolumeID": { "Type": "String", "Value": "602" },
+    "ChunkID": { "Type": "String", "Value": "28" },
+    "ChunkType": { "Type": "String", "Value": "I" },
+    "L2Version": { "Type": "String", "Value": "V06" },
+    "DateTime": { "Type": "String", "Value": "2019-05-10T14:35:08" }
   }
 }
 ```

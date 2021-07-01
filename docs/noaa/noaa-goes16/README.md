@@ -47,6 +47,8 @@ where:
   - ABI-L2-ADPC - Advanced Baseline Imager Level 2 Aerosol Detection CONUS
   - ABI-L2-ADPF - Advanced Baseline Imager Level 2 Aerosol Detection Full Disk
   - ABI-L2-ADPM - Advanced Baseline Imager Level 2 Aerosol Detection Mesoscale
+  - ABI-L2-AICEF - Ice Concentration and Extent
+  - ABI-L2-AITAF - Ice Age and Thickness
   - ABI-L2-AODC - Advanced Baseline Imager Level 2 Aerosol Optical Depth CONUS
   - ABI-L2-AODF - Advanced Baseline Imager Level 2 Aerosol Optical Depth Full Disk
   - ABI-L2-CMIPC - Advanced Baseline Imager Level 2 Cloud and Moisture Imagery CONUS
@@ -62,6 +64,9 @@ where:
   - ABI-L2-DMWC - Advanced Baseline Imager Level 2 Derived Motion Winds CONUS
   - ABI-L2-DMWF - Advanced Baseline Imager Level 2 Derived Motion Winds Full Disk
   - ABI-L2-DMWM - Advanced Baseline Imager Level 2 Derived Motion Winds Mesoscale
+  - ABI-L2-DMWVC - L2+ Derived Motion Winds - Vapor CONUS
+  - ABI-L2-DMWVF - L2+ Derived Motion Winds - Vapor Full Disk
+  - ABI-L2-DMWVF - L2+ Derived Motion Winds - Vapor Mesoscale
   - ABI-L2-DSIC - Advanced Baseline Imager Level 2 Derived Stability Indices CONUS
   - ABI-L2-DSIF - Advanced Baseline Imager Level 2 Derived Stability Indices Full Disk
   - ABI-L2-DSIM - Advanced Baseline Imager Level 2 Derived Stability Indices Mesoscale
@@ -70,6 +75,7 @@ where:
   - ABI-L2-DSRM - Advanced Baseline Imager Level 2 Downward Shortwave Radiation Mesoscale
   - ABI-L2-FDCC - Advanced Baseline Imager Level 2 Fire (Hot Spot Characterization) CONUS
   - ABI-L2-FDCF - Advanced Baseline Imager Level 2 Fire (Hot Spot Characterization) Full Disk
+  - ABI-L2-FDCM - Advanced Baseline Imager Level 2 Fire (Hot Spot Characterization) Mesoscale
   - ABI-L2-LSTC - Advanced Baseline Imager Level 2 Land Surface Temperature CONUS
   - ABI-L2-LSTF - Advanced Baseline Imager Level 2 Land Surface Temperature Full Disk
   - ABI-L2-LSTM - Advanced Baseline Imager Level 2 Land Surface Temperature Mesoscale
@@ -90,7 +96,14 @@ where:
   - ABI-L2-TPWF - Advanced Baseline Imager Level 2 Total Precipitable Water Full Disk
   - ABI-L2-TPWM - Advanced Baseline Imager Level 2 Total Precipitable Water Mesoscale
   - ABI-L2-VAAF - Advanced Baseline Imager Level 2 Volcanic Ash: Detection and Height Full Disk
+  - EXIS-L1b-SFEU - EXIS-Solar Flux: EUV 
+  - EXIS-L1b-SFXR - EXIS-Solar Flux: X-Ray 
   - GLM-L2-LCFA - Geostationary Lightning Mapper Level 2 Lightning Detection 
+  - MAG-L1b-GEOF - MAG-Geomagnetic Field
+  - SEIS-L1b-EHIS - SEISS-Energetic Heavy Ions 
+  - SEIS-L1b-MPSH - SEISS-Mag. Electrons & Protons: Med & High Energy
+  - SEIS-L1b-MPSL - SEISS-Mag. Electrons & Protons: Low Energy
+  - SEIS-L1b-SGPS - SEISS-Solar & Galactic Protons
   - SUVI-L1b-Fe093 - Solar Ultraviolet Imager Level 1b Extreme Ultraviolet
   - SUVI-L1b-Fe131 - Solar Ultraviolet Imager Level 1b Extreme Ultraviolet
   - SUVI-L1b-Fe171 - Solar Ultraviolet Imager Level 1b Extreme Ultraviolet
