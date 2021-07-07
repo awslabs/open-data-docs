@@ -18,9 +18,9 @@ subjected to a common suite of quality assurance reviews (Durre et al.,
 
 In this archive, the period of record station files are parsed into
 yearly files that contain all available GHCN-Daily station data for that
-year plus a time of observation field (where available---primarily for
+year plus a time of observation field (where available—primarily for
 U.S. Cooperative Observers). The observation times for U.S. Cooperative
-Observer data come from the station history archived in NCDC's
+Observer data come from the station history archived in NCDC’s
 Historical Observing Metadata Repository (HOMR). The files are updated
 daily on AWS to be in sync with updates to the GHCN-Daily dataset at
 NOAA.
@@ -108,7 +108,7 @@ MFLAG is the measurement flag. There are ten possible values:
 -   L = temperature appears to be lagged with respect to reported hour
     of observation
 -   O = converted from oktas
--   P = identified as "missing presumed zero" in DSI 3200 and 3206
+-   P = identified as “missing presumed zero” in DSI 3200 and 3206
 -   T = trace of precipitation, snowfall, or snow depth
 -   W = converted from 16-point WBAN code (for wind direction)
 
@@ -141,7 +141,7 @@ possible values (including blank, upper and lower case letters):
 -   Blank = No source (i.e., data value missing)
 -   0 = U.S. Cooperative Summary of the Day (NCDC DSI-3200)
 -   6 = CDMP Cooperative Summary of the Day (NCDC DSI-3206)
--   7 = U.S. Cooperative Summary of the Day -- Transmitted via WxCoder3
+-   7 = U.S. Cooperative Summary of the Day – Transmitted via WxCoder3
     (NCDC SI-3207)
 -   A = U.S. Automated Surface Observing System (ASOS) real-time data
     (since January 1, 2006)
@@ -161,27 +161,27 @@ possible values (including blank, upper and lower case letters):
     observer forms (from 2011 to present)
 -   M = Monthly METAR Extract (additional ASOS data)
 -   N = Community Collaborative Rain, Hail,and Snow (CoCoRaHS)
--   Q = Data from several African countries that had been "quarantined",
+-   Q = Data from several African countries that had been “quarantined”,
     that is, withheld from public release until permission was granted
     from the respective meteorological services
 -   R = NCEI Reference Network Database (Climate Reference Network and
     Regional Climate Reference Network)
 -   r = All-Russian Research Institute of Hydro-meteorological
     Information-World Data Center
--   S = Global Summary of the Day (NCDC DSI-9618)NOTE: "S" values are
+-   S = Global Summary of the Day (NCDC DSI-9618)NOTE: “S” values are
     derived from hourly synoptic reports exchanged on the Global
     Telecommunications System (GTS). Daily values derived in this
-    fashion may differ significantly from "true" daily data,
+    fashion may differ significantly from “true” daily data,
     particularly for precipitation (i.e., use with caution).
 -   s = China Meteorological Administration/National Meteorological
     Information Center/Climatic Data Center
     ([http://cdc.cma.gov.cn](http://cdc.cma.gov.cn/))
 -   T = SNOwpack TELemtry (SNOTEL) data obtained from the U.S.
-    Department of Agriculture's Natural Resources Conservation Service
+    Department of Agriculture’s Natural Resources Conservation Service
 -   U = Remote Automatic Weather Station (RAWS) data obtained from the
     Western Regional Climate Center
 -   u = Ukraine update
--   W = WBAN/ASOS Summary of the Day from NCDC's Integrated Surface Data
+-   W = WBAN/ASOS Summary of the Day from NCDC’s Integrated Surface Data
     (ISD).
 -   X = U.S. First-Order Summary of the Day (NCDC DSI-3210)
 -   Z = Datzilla official additions or replacements
@@ -321,7 +321,7 @@ The other elements are:
     -   \# corresponds to a code for soil depth (see above)
 
 -   TAVG = Average temperature (tenths of degrees C) \[Note that TAVG
-    from source 'S' corresponds to an average for the period ending at
+    from source ’S’ corresponds to an average for the period ending at
     2400 UTC rather than local midnight\]
 
 -   THIC = Thickness of ice on water (tenths of mm)
@@ -397,7 +397,7 @@ The other elements are:
     -   18 = Snow or ice crystals
     -   20 = Rain or snow shower
 
-## FORMAT OF "ghcnd-stations.txt" file {#format-of-ghcnd-stations-txt-file}
+## FORMAT OF “ghcnd-stations.txt” file
 
 There are over 106200 stations listed in a seperate file. Found here:
 
@@ -406,17 +406,17 @@ There are over 106200 stations listed in a seperate file. Found here:
 The table below describes the structure of each row of
 ghcnd-stations.txt
 
-  Variable       Columns   Type        Example
-  -------------- --------- ----------- -------------
-  ID             1-11      Character   EI000003980
-  LATITUDE       13-20     Real        55.3717
-  LONGITUDE      22-30     Real        -7.3400
-  ELEVATION      32-37     Real        21.0
-  STATE          39-40     Character   
-  NAME           42-71     Character   MALIN HEAD
-  GSN FLAG       73-75     Character   GSN
-  HCN/CRN FLAG   77-79     Character   
-  WMO ID         81-85     Character   03980
+| Variable     | Columns | Type      | Example     |
+|--------------|---------|-----------|-------------|
+| ID           | 1-11    | Character | EI000003980 |
+| LATITUDE     | 13-20   | Real      | 55.3717     |
+| LONGITUDE    | 22-30   | Real      | -7.3400     |
+| ELEVATION    | 32-37   | Real      | 21.0        |
+| STATE        | 39-40   | Character |             |
+| NAME         | 42-71   | Character | MALIN HEAD  |
+| GSN FLAG     | 73-75   | Character | GSN         |
+| HCN/CRN FLAG | 77-79   | Character |             |
+| WMO ID       | 81-85   | Character | 03980       |
 
 These variables have the following definitions:
 
@@ -430,9 +430,9 @@ These variables have the following definitions:
         identification number. To ensure consistency with with GHCN
         Daily, all numbers in the original CoCoRaHS IDs have been
         left-filled to make them all four digits long. In addition, the
-        characters "-" and "\_" have been removed to ensure that the IDs
-        do not exceed 11 characters when preceded by "US1". For example,
-        the CoCoRaHS ID "AZ-MR-156" becomes "US1AZMR0156" in GHCN-Daily
+        characters “-” and “\_” have been removed to ensure that the IDs
+        do not exceed 11 characters when preceded by “US1”. For example,
+        the CoCoRaHS ID “AZ-MR-156” becomes “US1AZMR0156” in GHCN-Daily
     -   C = U.S. Cooperative Network identification number (last six
         characters of the GHCN-Daily ID)
     -   E = Identification number used in the ECA&D non-blended dataset
@@ -490,226 +490,226 @@ The state codes are used in the station identification number. In the
 table below CODE is the FIPS country code of the country where the
 station is located.
 
-  Code   Country
-  ------ -----------------------------------------------------------------
-  AC     Antigua and Barbuda
-  AE     United Arab Emirates
-  AF     Afghanistan
-  AG     Algeria
-  AJ     Azerbaijan
-  AL     Albania
-  AM     Armenia
-  AO     Angola
-  AQ     American Samoa \[United States\]
-  AR     Argentina
-  AS     Australia
-  AU     Austria
-  AY     Antarctica
-  BA     Bahrain
-  BB     Barbados
-  BC     Botswana
-  BD     Bermuda \[United Kingdom\]
-  BE     Belgium
-  BF     Bahamas, The
-  BG     Bangladesh
-  BH     Belize
-  BK     Bosnia and Herzegovina
-  BL     Bolivia
-  BM     Burma
-  BN     Benin
-  BO     Belarus
-  BP     Solomon Islands
-  BR     Brazil
-  BU     Bulgaria
-  BX     Brunei
-  BY     Burundi
-  CA     Canada
-  CB     Cambodia
-  CD     Chad
-  CE     Sri Lanka
-  CF     Congo (Brazzaville)
-  CG     Congo (Kinshasa)
-  CH     China
-  CI     Chile
-  CJ     Cayman Islands \[United Kingdom\]
-  CK     Cocos (Keeling) Islands \[Australia\]
-  CM     Cameroon
-  CO     Colombia
-  CQ     Northern Mariana Islands \[United States\]
-  CS     Costa Rica
-  CT     Central African Republic
-  CU     Cuba
-  CV     Cape Verde
-  CW     Cook Islands \[New Zealand\]
-  CY     Cyprus
-  DA     Denmark
-  DO     Dominica
-  DR     Dominican Republic
-  EC     Ecuador
-  EG     Egypt
-  EI     Ireland
-  EK     Equatorial Guinea
-  EN     Estonia
-  ER     Eritrea
-  ES     El Salvador
-  ET     Ethiopia
-  EU     Europa Island \[France\]
-  EZ     Czech Republic
-  FG     French Guiana \[France\]
-  FI     Finland
-  FJ     Fiji
-  FK     Falkland Islands (Islas Malvinas) \[United Kingdom\]
-  FM     Federated States of Micronesia
-  FP     French Polynesia
-  FR     France
-  FS     French Southern and Antarctic Lands \[France\]
-  GA     Gambia, The
-  GB     Gabon
-  GG     Georgia
-  GH     Ghana
-  GI     Gibraltar \[United Kingdom\]
-  GL     Greenland \[Denmark\]
-  GM     Germany
-  GP     Guadeloupe \[France\]
-  GQ     Guam \[United States\]
-  GR     Greece
-  GT     Guatemala
-  GV     Guinea
-  GY     Guyana
-  HO     Honduras
-  HR     Croatia
-  HU     Hungary
-  IC     Iceland
-  ID     Indonesia
-  IN     India
-  IO     British Indian Ocean Territory \[United Kingdom\]
-  IR     Iran
-  IS     Israel
-  IT     Italy
-  IV     Cote D'Ivoire
-  IZ     Iraq
-  JA     Japan
-  JM     Jamaica
-  JN     Jan Mayen \[Norway\]
-  JO     Jordan
-  JQ     Johnston Atoll \[United States\]
-  JU     Juan De Nova Island \[France\]
-  KE     Kenya
-  KG     Kyrgzstan
-  KN     Korea, South
-  KR     Kiribati
-  S      Korea,South
-  K      Christmas Island \[Australia\]
-  KU     Kuwait
-  KZ     Kazakhstan
-  LA     Laos
-  LE     Lebanon
-  LG     Latvia
-  LH     Lithuania
-  LI     Liberia
-  LO     Slovakia
-  LQ     Palmyra Atoll \[United States\]
-  LT     Lesotho
-  LU     Luxembourg
-  LY     Libya
-  MA     Madagascar
-  MB     Martinique \[France\]
-  MC     Macau S.A.R
-  MD     Moldova
-  MF     Mayotte \[France\]
-  MG     Mongolia
-  MI     Malawi
-  MJ     Montenegro
-  MK     Macedonia
-  ML     Mali
-  MO     Morocco
-  MP     Mauritius
-  MQ     Midway Islands \[United States\]
-  MR     Mauritania
-  MT     Malta
-  MU     Oman
-  MV     Maldives
-  MX     Mexico
-  MY     Malaysia
-  MZ     Mozambique
-  NC     New Caledonia \[France\]
-  NE     Niue \[New Zealand\]
-  NF     Norfolk Island \[Australia\]
-  NG     Niger
-  NH     Vanuatu
-  NI     Nigeria
-  NL     Netherlands
-  NO     Norway
-  NP     Nepal
-  NS     Suriname
-  NT     Netherlands Antilles \[Netherlands\]
-  NU     Nicaragua
-  NZ     New Zealand
-  PA     Paraguay
-  PC     Pitcairn Islands \[United Kingdom\]
-  PE     Peru
-  PK     Pakistan
-  PL     Poland
-  PM     Panama
-  PO     Portugal
-  PP     Papua New Guinea
-  PS     Palau
-  PU     Guinea-Bissau
-  QA     Qatar
-  RE     Reunion \[France\]
-  RI     Serbia
-  RM     Marshall Islands
-  RO     Romania
-  RP     Philippines
-  RQ     Puerto Rico \[United States\]
-  RS     Russia
-  RW     Rwanda
-  SA     Saudi Arabia
-  SB     Saint Pierre and Miquelon \[France\]
-  SE     Seychelles
-  SF     South Africa
-  SG     Senegal
-  SH     Saint Helena \[United Kingdom\]
-  SI     Slovenia
-  SL     Sierra Leone
-  SN     Singapore
-  SP     Spain
-  ST     Saint Lucia
-  SU     Sudan
-  SV     Svalbard \[Norway\]
-  SW     Sweden
-  SX     South Georgia and the South Sandwich Islands \[United Kingdom\]
-  SY     Syria
-  SZ     Switzerland
-  TD     Trinidad and Tobago
-  TE     Tromelin Island \[France\]
-  TH     Thailand
-  TI     Tajikistan
-  TL     Tokelau \[New Zealand\]
-  TN     Tonga
-  TO     Togo
-  TS     Tunisia
-  TU     Turkey
-  TV     Tuvalu
-  TX     Turkmenistan
-  TZ     Tanzania
-  UG     Uganda
-  UK     United Kingdom
-  UP     Ukraine
-  US     United States
-  UV     Burkina Faso
-  UY     Uruguay
-  UZ     Uzbekistan
-  VE     Venezuela
-  VM     Vietnam
-  VQ     Virgin Islands \[United States\]
-  WA     Namibia
-  WF     Wallis and Futuna \[France\]
-  WI     Western Sahara
-  WQ     Wake Island \[United States\]
-  WZ     Swaziland
-  ZA     Zambia
-  ZI     Zimbabwe
+| Code | Country                                                         |
+|------|-----------------------------------------------------------------|
+| AC   | Antigua and Barbuda                                             |
+| AE   | United Arab Emirates                                            |
+| AF   | Afghanistan                                                     |
+| AG   | Algeria                                                         |
+| AJ   | Azerbaijan                                                      |
+| AL   | Albania                                                         |
+| AM   | Armenia                                                         |
+| AO   | Angola                                                          |
+| AQ   | American Samoa \[United States\]                                |
+| AR   | Argentina                                                       |
+| AS   | Australia                                                       |
+| AU   | Austria                                                         |
+| AY   | Antarctica                                                      |
+| BA   | Bahrain                                                         |
+| BB   | Barbados                                                        |
+| BC   | Botswana                                                        |
+| BD   | Bermuda \[United Kingdom\]                                      |
+| BE   | Belgium                                                         |
+| BF   | Bahamas, The                                                    |
+| BG   | Bangladesh                                                      |
+| BH   | Belize                                                          |
+| BK   | Bosnia and Herzegovina                                          |
+| BL   | Bolivia                                                         |
+| BM   | Burma                                                           |
+| BN   | Benin                                                           |
+| BO   | Belarus                                                         |
+| BP   | Solomon Islands                                                 |
+| BR   | Brazil                                                          |
+| BU   | Bulgaria                                                        |
+| BX   | Brunei                                                          |
+| BY   | Burundi                                                         |
+| CA   | Canada                                                          |
+| CB   | Cambodia                                                        |
+| CD   | Chad                                                            |
+| CE   | Sri Lanka                                                       |
+| CF   | Congo (Brazzaville)                                             |
+| CG   | Congo (Kinshasa)                                                |
+| CH   | China                                                           |
+| CI   | Chile                                                           |
+| CJ   | Cayman Islands \[United Kingdom\]                               |
+| CK   | Cocos (Keeling) Islands \[Australia\]                           |
+| CM   | Cameroon                                                        |
+| CO   | Colombia                                                        |
+| CQ   | Northern Mariana Islands \[United States\]                      |
+| CS   | Costa Rica                                                      |
+| CT   | Central African Republic                                        |
+| CU   | Cuba                                                            |
+| CV   | Cape Verde                                                      |
+| CW   | Cook Islands \[New Zealand\]                                    |
+| CY   | Cyprus                                                          |
+| DA   | Denmark                                                         |
+| DO   | Dominica                                                        |
+| DR   | Dominican Republic                                              |
+| EC   | Ecuador                                                         |
+| EG   | Egypt                                                           |
+| EI   | Ireland                                                         |
+| EK   | Equatorial Guinea                                               |
+| EN   | Estonia                                                         |
+| ER   | Eritrea                                                         |
+| ES   | El Salvador                                                     |
+| ET   | Ethiopia                                                        |
+| EU   | Europa Island \[France\]                                        |
+| EZ   | Czech Republic                                                  |
+| FG   | French Guiana \[France\]                                        |
+| FI   | Finland                                                         |
+| FJ   | Fiji                                                            |
+| FK   | Falkland Islands (Islas Malvinas) \[United Kingdom\]            |
+| FM   | Federated States of Micronesia                                  |
+| FP   | French Polynesia                                                |
+| FR   | France                                                          |
+| FS   | French Southern and Antarctic Lands \[France\]                  |
+| GA   | Gambia, The                                                     |
+| GB   | Gabon                                                           |
+| GG   | Georgia                                                         |
+| GH   | Ghana                                                           |
+| GI   | Gibraltar \[United Kingdom\]                                    |
+| GL   | Greenland \[Denmark\]                                           |
+| GM   | Germany                                                         |
+| GP   | Guadeloupe \[France\]                                           |
+| GQ   | Guam \[United States\]                                          |
+| GR   | Greece                                                          |
+| GT   | Guatemala                                                       |
+| GV   | Guinea                                                          |
+| GY   | Guyana                                                          |
+| HO   | Honduras                                                        |
+| HR   | Croatia                                                         |
+| HU   | Hungary                                                         |
+| IC   | Iceland                                                         |
+| ID   | Indonesia                                                       |
+| IN   | India                                                           |
+| IO   | British Indian Ocean Territory \[United Kingdom\]               |
+| IR   | Iran                                                            |
+| IS   | Israel                                                          |
+| IT   | Italy                                                           |
+| IV   | Cote D’Ivoire                                                   |
+| IZ   | Iraq                                                            |
+| JA   | Japan                                                           |
+| JM   | Jamaica                                                         |
+| JN   | Jan Mayen \[Norway\]                                            |
+| JO   | Jordan                                                          |
+| JQ   | Johnston Atoll \[United States\]                                |
+| JU   | Juan De Nova Island \[France\]                                  |
+| KE   | Kenya                                                           |
+| KG   | Kyrgzstan                                                       |
+| KN   | Korea, South                                                    |
+| KR   | Kiribati                                                        |
+| S    | Korea,South                                                     |
+| K    | Christmas Island \[Australia\]                                  |
+| KU   | Kuwait                                                          |
+| KZ   | Kazakhstan                                                      |
+| LA   | Laos                                                            |
+| LE   | Lebanon                                                         |
+| LG   | Latvia                                                          |
+| LH   | Lithuania                                                       |
+| LI   | Liberia                                                         |
+| LO   | Slovakia                                                        |
+| LQ   | Palmyra Atoll \[United States\]                                 |
+| LT   | Lesotho                                                         |
+| LU   | Luxembourg                                                      |
+| LY   | Libya                                                           |
+| MA   | Madagascar                                                      |
+| MB   | Martinique \[France\]                                           |
+| MC   | Macau S.A.R                                                     |
+| MD   | Moldova                                                         |
+| MF   | Mayotte \[France\]                                              |
+| MG   | Mongolia                                                        |
+| MI   | Malawi                                                          |
+| MJ   | Montenegro                                                      |
+| MK   | Macedonia                                                       |
+| ML   | Mali                                                            |
+| MO   | Morocco                                                         |
+| MP   | Mauritius                                                       |
+| MQ   | Midway Islands \[United States\]                                |
+| MR   | Mauritania                                                      |
+| MT   | Malta                                                           |
+| MU   | Oman                                                            |
+| MV   | Maldives                                                        |
+| MX   | Mexico                                                          |
+| MY   | Malaysia                                                        |
+| MZ   | Mozambique                                                      |
+| NC   | New Caledonia \[France\]                                        |
+| NE   | Niue \[New Zealand\]                                            |
+| NF   | Norfolk Island \[Australia\]                                    |
+| NG   | Niger                                                           |
+| NH   | Vanuatu                                                         |
+| NI   | Nigeria                                                         |
+| NL   | Netherlands                                                     |
+| NO   | Norway                                                          |
+| NP   | Nepal                                                           |
+| NS   | Suriname                                                        |
+| NT   | Netherlands Antilles \[Netherlands\]                            |
+| NU   | Nicaragua                                                       |
+| NZ   | New Zealand                                                     |
+| PA   | Paraguay                                                        |
+| PC   | Pitcairn Islands \[United Kingdom\]                             |
+| PE   | Peru                                                            |
+| PK   | Pakistan                                                        |
+| PL   | Poland                                                          |
+| PM   | Panama                                                          |
+| PO   | Portugal                                                        |
+| PP   | Papua New Guinea                                                |
+| PS   | Palau                                                           |
+| PU   | Guinea-Bissau                                                   |
+| QA   | Qatar                                                           |
+| RE   | Reunion \[France\]                                              |
+| RI   | Serbia                                                          |
+| RM   | Marshall Islands                                                |
+| RO   | Romania                                                         |
+| RP   | Philippines                                                     |
+| RQ   | Puerto Rico \[United States\]                                   |
+| RS   | Russia                                                          |
+| RW   | Rwanda                                                          |
+| SA   | Saudi Arabia                                                    |
+| SB   | Saint Pierre and Miquelon \[France\]                            |
+| SE   | Seychelles                                                      |
+| SF   | South Africa                                                    |
+| SG   | Senegal                                                         |
+| SH   | Saint Helena \[United Kingdom\]                                 |
+| SI   | Slovenia                                                        |
+| SL   | Sierra Leone                                                    |
+| SN   | Singapore                                                       |
+| SP   | Spain                                                           |
+| ST   | Saint Lucia                                                     |
+| SU   | Sudan                                                           |
+| SV   | Svalbard \[Norway\]                                             |
+| SW   | Sweden                                                          |
+| SX   | South Georgia and the South Sandwich Islands \[United Kingdom\] |
+| SY   | Syria                                                           |
+| SZ   | Switzerland                                                     |
+| TD   | Trinidad and Tobago                                             |
+| TE   | Tromelin Island \[France\]                                      |
+| TH   | Thailand                                                        |
+| TI   | Tajikistan                                                      |
+| TL   | Tokelau \[New Zealand\]                                         |
+| TN   | Tonga                                                           |
+| TO   | Togo                                                            |
+| TS   | Tunisia                                                         |
+| TU   | Turkey                                                          |
+| TV   | Tuvalu                                                          |
+| TX   | Turkmenistan                                                    |
+| TZ   | Tanzania                                                        |
+| UG   | Uganda                                                          |
+| UK   | United Kingdom                                                  |
+| UP   | Ukraine                                                         |
+| US   | United States                                                   |
+| UV   | Burkina Faso                                                    |
+| UY   | Uruguay                                                         |
+| UZ   | Uzbekistan                                                      |
+| VE   | Venezuela                                                       |
+| VM   | Vietnam                                                         |
+| VQ   | Virgin Islands \[United States\]                                |
+| WA   | Namibia                                                         |
+| WF   | Wallis and Futuna \[France\]                                    |
+| WI   | Western Sahara                                                  |
+| WQ   | Wake Island \[United States\]                                   |
+| WZ   | Swaziland                                                       |
+| ZA   | Zambia                                                          |
+| ZI   | Zimbabwe                                                        |
 
 ### Look Up Table of State Codes
 
@@ -722,85 +722,85 @@ The state codes are used in the station identification number, the table
 below CODE = is the POSTAL code of the U.S. state/territory or Canadian
 province where the station is located.
 
-  Code   State
-  ------ -----------------------------
-  AB     ALBERTA
-  AB     ALBERTA
-  AK     ALASKA
-  AL     ALABAMA
-  AR     ARKANSAS
-  AS     AMERICAN SAMOA
-  AZ     ARIZONA
-  BC     BRITISH COLUMBIA
-  CA     CALIFORNIA
-  CO     COLORADO
-  CT     CONNECTICUT
-  DC     DISTRICT OF COLUMBIA
-  DE     DELAWARE
-  FL     FLORIDA
-  FM     MICRONESIA
-  GA     GEORGIA
-  GU     GUAM
-  HI     HAWAII
-  IA     IOWA
-  ID     IDAHO
-  IL     ILLINOIS
-  IN     INDIANA
-  KS     KANSAS
-  KY     KENTUCKY
-  LA     LOUISIANA
-  MA     MASSACHUSETTS
-  MB     MANITOBA
-  MD     MARYLAND
-  ME     MAINE
-  MH     MARSHALL ISLANDS
-  MI     MICHIGAN
-  MN     MINNESOTA
-  MO     MISSOURI
-  MP     NORTHERN MARIANA ISLANDS
-  MS     MISSISSIPPI
-  MT     MONTANA
-  NB     NEW BRUNSWICK
-  NC     NORTH CAROLINA
-  ND     NORTH DAKOTA
-  NE     NEBRASKA
-  NH     NEW HAMPSHIRE
-  NJ     NEW JERSEY
-  NL     NEWFOUNDLAND AND LABRADOR
-  NM     NEW MEXICO
-  NS     NOVA SCOTIA
-  NT     NORTHWEST TERRITORIES
-  NU     NUNAVUT
-  NV     NEVADA
-  NY     NEW YORK
-  OH     OHIO
-  OK     OKLAHOMA
-  ON     ONTARIO
-  OR     OREGON
-  PA     PENNSYLVANIA
-  PE     PRINCE EDWARD ISLAND
-  PI     PACIFIC ISLANDS
-  PR     PUERTO RICO
-  PW     PALAU
-  QC     QUEBEC
-  RI     RHODE ISLAND
-  SC     SOUTH CAROLINA
-  SD     SOUTH DAKOTA
-  SK     SASKATCHEWAN
-  TN     TENNESSEE
-  TX     TEXAS
-  UM     U.S. MINOR OUTLYING ISLANDS
-  UT     UTAH
-  VA     VIRGINIA
-  VI     VIRGIN ISLANDS
-  VT     VERMONT
-  WA     WASHINGTON
-  WI     WISCONSIN
-  WV     WEST VIRGINIA
-  WY     WYOMING
-  YT     YUKON TERRITORY
+| Code | State                       |
+|------|-----------------------------|
+| AB   | ALBERTA                     |
+| AB   | ALBERTA                     |
+| AK   | ALASKA                      |
+| AL   | ALABAMA                     |
+| AR   | ARKANSAS                    |
+| AS   | AMERICAN SAMOA              |
+| AZ   | ARIZONA                     |
+| BC   | BRITISH COLUMBIA            |
+| CA   | CALIFORNIA                  |
+| CO   | COLORADO                    |
+| CT   | CONNECTICUT                 |
+| DC   | DISTRICT OF COLUMBIA        |
+| DE   | DELAWARE                    |
+| FL   | FLORIDA                     |
+| FM   | MICRONESIA                  |
+| GA   | GEORGIA                     |
+| GU   | GUAM                        |
+| HI   | HAWAII                      |
+| IA   | IOWA                        |
+| ID   | IDAHO                       |
+| IL   | ILLINOIS                    |
+| IN   | INDIANA                     |
+| KS   | KANSAS                      |
+| KY   | KENTUCKY                    |
+| LA   | LOUISIANA                   |
+| MA   | MASSACHUSETTS               |
+| MB   | MANITOBA                    |
+| MD   | MARYLAND                    |
+| ME   | MAINE                       |
+| MH   | MARSHALL ISLANDS            |
+| MI   | MICHIGAN                    |
+| MN   | MINNESOTA                   |
+| MO   | MISSOURI                    |
+| MP   | NORTHERN MARIANA ISLANDS    |
+| MS   | MISSISSIPPI                 |
+| MT   | MONTANA                     |
+| NB   | NEW BRUNSWICK               |
+| NC   | NORTH CAROLINA              |
+| ND   | NORTH DAKOTA                |
+| NE   | NEBRASKA                    |
+| NH   | NEW HAMPSHIRE               |
+| NJ   | NEW JERSEY                  |
+| NL   | NEWFOUNDLAND AND LABRADOR   |
+| NM   | NEW MEXICO                  |
+| NS   | NOVA SCOTIA                 |
+| NT   | NORTHWEST TERRITORIES       |
+| NU   | NUNAVUT                     |
+| NV   | NEVADA                      |
+| NY   | NEW YORK                    |
+| OH   | OHIO                        |
+| OK   | OKLAHOMA                    |
+| ON   | ONTARIO                     |
+| OR   | OREGON                      |
+| PA   | PENNSYLVANIA                |
+| PE   | PRINCE EDWARD ISLAND        |
+| PI   | PACIFIC ISLANDS             |
+| PR   | PUERTO RICO                 |
+| PW   | PALAU                       |
+| QC   | QUEBEC                      |
+| RI   | RHODE ISLAND                |
+| SC   | SOUTH CAROLINA              |
+| SD   | SOUTH DAKOTA                |
+| SK   | SASKATCHEWAN                |
+| TN   | TENNESSEE                   |
+| TX   | TEXAS                       |
+| UM   | U.S. MINOR OUTLYING ISLANDS |
+| UT   | UTAH                        |
+| VA   | VIRGINIA                    |
+| VI   | VIRGIN ISLANDS              |
+| VT   | VERMONT                     |
+| WA   | WASHINGTON                  |
+| WI   | WISCONSIN                   |
+| WV   | WEST VIRGINIA               |
+| WY   | WYOMING                     |
+| YT   | YUKON TERRITORY             |
 
-## FORMAT OF "ghcnd-inventory.txt" {#format-of-ghcnd-inventory-txt}
+## FORMAT OF “ghcnd-inventory.txt”
 
 This is a file listing the periods of record for each station and
 element. The file is located here:
@@ -809,17 +809,17 @@ element. The file is located here:
 
 The file structure is described in the table below.
 
-  Variable    Columns   Type
-  ----------- --------- -----------
-  ID          1-11      CHARACTER
-  LATITUDE    13-20     REAL
-  LONGITUDE   22-30     REAL
-  ELEMENT     32-35     CHARACTER
-  FIRSTYEAR   37-40     INTEGER
-  LASTYEAR    42-45     INTEGER
+| Variable  | Columns | Type      |
+|-----------|---------|-----------|
+| ID        | 1-11    | CHARACTER |
+| LATITUDE  | 13-20   | REAL      |
+| LONGITUDE | 22-30   | REAL      |
+| ELEMENT   | 32-35   | CHARACTER |
+| FIRSTYEAR | 37-40   | INTEGER   |
+| LASTYEAR  | 42-45   | INTEGER   |
 
 -   ID = the station identification code. Please see
-    "ghcnd-stations.txt" for a complete list of stations and their
+    “ghcnd-stations.txt” for a complete list of stations and their
     metadata.
 -   LATITUDE = the latitude of the station (in decimal degrees).
 -   LONGITUDE = the longitude of the station (in decimal degrees).
@@ -834,7 +834,7 @@ For questions regarding data content or quality, go
 [here](https://www.ncdc.noaa.gov/ghcn-daily-description). For any
 questions regarding data delivery not associated with this platform or
 any general questions regarding the NOAA Big Data Project, email
-noaa.bdp\@noaa.gov.
+noaa.bdp@noaa.gov.
 
 ## HOW TO CITE:
 
@@ -862,7 +862,7 @@ National Centers for Environmental Information.
 
 Durre, I., M. J. Menne, B. E. Gleason, T. G. Houston, and R. S. Vose
 (2010), Comprehensive automated quality assurance of daily surface
-observations, J. Appl. Meteorol. Climatol., 49, 1615--1633,
+observations, J. Appl. Meteorol. Climatol., 49, 1615–1633,
 [doi:10.1175/2010JAMC2375.1](https://doi:10.1175/2010JAMC2375.1)
 
 Klein Tank, A.M.G. and Coauthors, 2002. Daily dataset of 20th-century
