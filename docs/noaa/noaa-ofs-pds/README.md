@@ -107,40 +107,10 @@ You can use the AWS Command Line Interface to list a particular day in the bucke
 <td>50m – 2.5km</td>
 </tr>
 <tr>
-<td>LOOFS</td>
-<td>Lake Ontario</td>
-<td>120 hrs</td>
-<td>50m – 2.5km</td>
-</tr>
-<tr>
-<td>LSOFS</td>
-<td>Lake Superior</td>
-<td>120 hrs</td>
-<td>250m – 2.5km</td>
-</tr>
-<tr>
-<td>NEGOFS</td>
-<td>North Eastern Gulf of Mexico</td>
-<td>48 hrs</td>
-<td>45m - 2km</td>
-</tr>
-<tr>
-<td>NGOFS</td>
-<td>Northern Gulf of Mexico</td>
-<td>54 hrs</td>
-<td>600m - 10km</td>
-</tr>
-<tr>
 <td>NGOFS2</td>
 <td>Northern Gulf of Mexico</td>
 <td>48 hrs</td>
 <td>45m - 300m</td>
-</tr>
-<tr>
-<td>NWGOFS</td>
-<td>North Western Gulf of Mexico</td>
-<td>48 hrs</td>
-<td>60m - 3.5km</td>
 </tr>
 <tr>
 <td>SFBOFS</td>
