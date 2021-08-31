@@ -281,8 +281,7 @@ For `noaa-nos-ofs-pds` if you append the model run name onto the path you will g
 
 *Special Case - Great Lakes*
 
-The GLOFS data, the Great Lakes, is not structured in the same way as the data is for the other OFS models. GLOFS is composed of the nowcasts and forecasts for the lakes Huron (lhofs), Michigan (lmofs), Ontario (loofs) and Superior (lsofs).
-
+The outputs from the two legacy LOOFS and LSOFS are not structured in the same way as the data for the other OFS models. The output files of each cycle are,
 
 
  - glofs.lOFS.fields.forecast.YYYYMMDD.tBBz.nc
