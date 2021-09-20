@@ -51,6 +51,9 @@ where:
   - ABI-L2-AITAF - Ice Age and Thickness
   - ABI-L2-AODC - Advanced Baseline Imager Level 2 Aerosol Optical Depth CONUS
   - ABI-L2-AODF - Advanced Baseline Imager Level 2 Aerosol Optical Depth Full Disk
+  - ABI-L2-BRFC - Land Surface Bidirectional Reflectance Factor (CONUS) 2 km resolution & DQFs
+  - ABI-L2-BRFF - Land Surface Bidirectional Reflectance Factor (Full Disk) 2 km resolution & DQFs
+  - ABI-L2-BRFM -  Land Surface Bidirectional Reflectance Factor (Mesoscale) 2 km resolution & DQFs
   - ABI-L2-CMIPC - Advanced Baseline Imager Level 2 Cloud and Moisture Imagery CONUS
   - ABI-L2-CMIPF - Advanced Baseline Imager Level 2 Cloud and Moisture Imagery Full Disk
   - ABI-L2-CMIPM - Advanced Baseline Imager Level 2 Cloud and Moisture Imagery Mesoscale
@@ -76,6 +79,9 @@ where:
   - ABI-L2-FDCC - Advanced Baseline Imager Level 2 Fire (Hot Spot Characterization) CONUS
   - ABI-L2-FDCF - Advanced Baseline Imager Level 2 Fire (Hot Spot Characterization) Full Disk
   - ABI-L2-FDCM - Advanced Baseline Imager Level 2 Fire (Hot Spot Characterization) Mesoscale
+  - ABI-L2-LSAC  - Land Surface Albedo (CONUS) 2km resolution & DQFs
+  - ABI-L2-LSAF - Land Surface Albedo (Full Disk) 2km resolution & DQFs
+  - ABI-L2-LSAM - Land Surface Albedo (Mesoscale) 2km resolution & DQFs
   - ABI-L2-LSTC - Advanced Baseline Imager Level 2 Land Surface Temperature CONUS
   - ABI-L2-LSTF - Advanced Baseline Imager Level 2 Land Surface Temperature Full Disk
   - ABI-L2-LSTM - Advanced Baseline Imager Level 2 Land Surface Temperature Mesoscale
