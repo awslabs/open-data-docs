@@ -10,19 +10,22 @@ existed in order to get a better understanding of the state of the
 weather from that period. This same type of historical run can be
 conducted for other types of models as well, including water models.
 
-The National Water Model Reanalysis dataset contains output from a
-A 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model, and a 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model (NWM). These simulations used
-observed rainfall as input and ingested other required meteorological
-input fields from a weather Reanalysis dataset. The output frequency and
-fields available in this historical NWM dataset differ from those
-contained in the real-time forecast model. One application of this
-dataset is to provide historical context to current real-time
-streamflow, soil moisture and snowpack NWM conditions. The Reanalysis
-data can be used to infer flow frequencies and perform temporal analyses
-with hourly streamflow output and 3-hourly land surface output. The
-long-term dataset can also be used in the development of end user
-applications which require a long baseline of data for system training
-or verification purposes.
+The NOAA National Water Model Reanalysis dataset contains input and output from multi-decade retrospective simulations. These simulations used observed rainfall as input and ingested other required meteorological input fields from a weather reanalysis dataset. The output frequency and fields available in this historical NWM dataset differ from those contained in the real-time forecast model. One application of this dataset is to provide historical context to current near real-time streamflow, soil moisture and snowpack conditions. The reanalysis data can be used to infer flow frequencies and perform temporal analyses with hourly streamflow output and 3-hourly land surface output. This  dataset can also be used in the development of end user applications which require a long baseline of data for system training or verification purposes. This dataset contains output from two retrospective simulations. Currently there are three versions of the dataset. Version 1.2 output files are available in netcdf (all variables). Version 2.0 output files are available in both netcdf (all variables) and zarr (channel routing variables) formats. While, the third version 2.1 input and output files are available in both netcdf and zarr for the following data types:
+
+channel routing (chrtout)
+
+subsurface (gwout)
+
+lake (lakeout)
+
+land surface (ldasout)
+
+precipitation (precip) and 
+
+terrain routing (rtout)
+
+For the current three versions of the dataset we have: A 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model, a 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model and a 41-year (February 1979 through December 2020) retrospective simulation using version 2.1 of the National Water Model.
+
 
 Learn more about the National Water Model: [http://water.noaa.gov/](http://water.noaa.gov/)
 
