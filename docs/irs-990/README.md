@@ -12,7 +12,7 @@ Each electronic 990 filing is available as a unique XML file in the "irs-form-99
 
 All of the data is publicly accessible via the S3 bucket's HTTPS endpoint at https://s3.amazonaws.com/irs-form-990. No authentication is required to download data over HTTPS. For example, the example filing mentioned above can be accessed at https://s3.amazonaws.com/irs-form-990/201541349349307794_public.xml.
 
-Index listings of available filings are available in JSON and CSV files, organized based on the year they were filed. Index files exist for each year going back to 2011 and are named based on their year and file type. For example, the CSV index for 2011 is available at https://s3.amazonaws.com/irs-form-990/index_2011.csv, and the JSON index file for 2015 is available at https://s3.amazonaws.com/irs-form-990/index_2011.json
+Index listings of available filings are available in JSON and CSV files, organized based on the year they were filed. Index files exist for each year going back to 2011 and are named based on their year and file type. For example, the CSV index for 2011 is available at https://s3.amazonaws.com/irs-form-990/2011_index.csv, and the JSON index file for 2015 is available at https://s3.amazonaws.com/irs-form-990/index_2015.json
 These index files includes basic information about each filing, including the name of the filer, the Employer Identification Number (EIN) of the filer, the date of the filing, and unique identifier for the filing.
 
 If you use the [AWS Command Line Interface](https://aws.amazon.com/documentation/cli/), you can list the index files and calculate the total size of the files with [the following "ls" command](http://docs.aws.amazon.com/cli/latest/reference/s3/ls.html):
