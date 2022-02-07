@@ -44,7 +44,7 @@ Data stored under the prefix <code>/index/</code> are shapefiles that contain th
 
 *Note: The data upto year 2015 was compressed using Lerc1 compression and for the year 2016, 2017, 2018, 2019 and 2020 Lerc2 compression was used. Click <a href="https://github.com/Esri/lerc">here</a> for more info on Lerc compression.*
 
-This bucket also contains data in COG format. File as formatted as Cloud Optimized GeoTIFFs, has been compressed using Deflate compression. It is provided as 512x512 tiles, with pyramids created using 2x sampling by averaging. It was created using gdal_translate with the following command
+This bucket also contains data in COG format. Files are formatted as Cloud Optimized GeoTIFFs, has been compressed using Deflate compression. It is provided as 512x512 tiles, with pyramids created using 2x sampling by averaging. It was created using gdal_translate with the following command
 
 <code>gdal_translate -of COG -co tiled=yes -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co COMPRESS=DEFLATE -co PREDICTOR=2 src_dataset dst_dataset</code>
 
