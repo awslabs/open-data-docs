@@ -42,15 +42,15 @@ Data stored under the prefix <code>/index/</code> are shapefiles that contain th
 
 <code>gdaladdo -r average src_dataset 2 4 8 16 32 64</code>
 
-*Note: The data upto year 2015 was compressed using Lerc1 compression and for the year 2016 and 2017 Lerc2 compression was used. Click <a href="https://github.com/Esri/lerc">here</a> for more info on Lerc compression.*
-
-*We used Esri’s <a href="https://github.com/Esri/OptimizeRasters/blob/master/README.md">OptimizedRasters</a> to convert this data.*
+*Note: The data upto year 2015 was compressed using Lerc1 compression and for the year 2016, 2017, 2018, 2019 and 2020 Lerc2 compression was used. Click <a href="https://github.com/Esri/lerc">here</a> for more info on Lerc compression.*
 
 This bucket also contains data in COG format. File as formatted as Cloud Optimized GeoTIFFs, has been compressed using Deflate compression. It is provided as 512x512 tiles, with pyramids created using 2x sampling by averaging. It was created using gdal_translate with the following command
 
-gdal_translate -of COG -co tiled=yes -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co COMPRESS=DEFLATE -co PREDICTOR=2 src_dataset dst_dataset
+<code>gdal_translate -of COG -co tiled=yes -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -co COMPRESS=DEFLATE -co PREDICTOR=2 src_dataset dst_dataset</code>
 
-gdaladdo -r average -ro src_dataset 2 4 8 16 32 64
+<code>gdaladdo -r average -ro src_dataset 2 4 8 16 32 64</code>
+
+*We used Esri’s <a href="https://github.com/Esri/OptimizeRasters/blob/master/README.md">OptimizedRasters</a> to convert this data.*
 
 **naip-source**: The GeoTIFF data in this bucket is provided by the APFO, with no post-processing and without pyramids. Instead of the raw data, we recommend using the optimized MRF data from the naip-analytic bucket.
 
@@ -65,7 +65,9 @@ gdaladdo -r average -ro src_dataset 2 4 8 16 32 64
 To see the full list of available files, you can access the bucket manifest with the aws-cli (version 15 and above) command below:
 
 <code>aws s3 cp s3://naip-analytic/manifest.txt manifest.txt --request-payer</code>
+
 <code>aws s3 cp s3://naip-source/manifest.txt manifest.txt --request-payer</code>
+
 <code>aws s3 cp s3://naip-visualization/manifest.txt manifest.txt --request-payer</code>
 
 or a command link
