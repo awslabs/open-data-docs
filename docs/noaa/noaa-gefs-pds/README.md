@@ -1,11 +1,12 @@
 # The Global Ensemble Forecast System (GEFS) from NOAA
 
-The Global Ensemble Forecast System (GEFS), previously known as the GFS Global ENSemble (GENS), is a weather forecast model made up of 21 separate forecasts, or ensemble members. The National Centers for Environmental Prediction (NCEP) started the GEFS to address the nature of uncertainty in weather observations, which are used to initialize weather forecast models. For more information, see [here](https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-ensemble-forecast-system-gefs).
+The Global Ensemble Forecast System (GEFS), previously known as the GFS Global ENSemble (GENS), is a weather forecast model made up of 21 separate forecasts, or ensemble members. The National Centers for Environmental Prediction (NCEP) started the GEFS to address the nature of uncertainty in weather observations, which are used to initialize weather forecast models. For more information, see [here](https://www.ncei.noaa.gov/products/weather-climate-models/global-ensemble-forecast).
 
 The files are in [GRIB2](http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/) format. Both NOAA and NASA provide tools for accessing GRIB2 files:
 
  - [Panoply](https://www.giss.nasa.gov/tools/panoply/) is a NASA application that allows users to view and graph data that are contained in GRIB2 files.
  - [wgrib2](http://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/) is a software library from NOAA that can be used for extracting data from a GRIB2 file. It is aimed at advanced users.
+ - GRIB2 files can also be read by [GDAL](https://gdal.org/drivers/raster/grib.html), which can be accessed through many interfaces such as R, Python.
 
 
 ## Accessing Global Ensemble Forecast System (GEFS) Model Data on AWS
