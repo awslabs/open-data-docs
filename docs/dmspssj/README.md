@@ -19,7 +19,7 @@ ML-Ready data is avaiable in [Apache Parquet](https://parquet.apache.org/) forma
 It is reduced from raw data as follows:
 
 1. The 19 SSJ energy channels are grouped in 'bands': "hard" (particle kinetic energy >1keV) and "soft" (particle kinetic energy <= 1keV) 
-2. Uncertain (low detector count) measurements are discarded using flexible threshold (settable in configuration file)
+2. Uncertain (low detector count) measurements are discarded using flexible threshold
 3. The remaining measurements from all channels in a given band are summed 
 4. Data is grouped by orbit (in the ML-ready dataset these would be the 'samples')
 5. Data from each orbit is divided into latitude bins and the average flux in each bin is calculated (each bin is a 'feature' in the ML-ready dataset)
