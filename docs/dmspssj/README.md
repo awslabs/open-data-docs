@@ -4,11 +4,11 @@ The United States Air Force (USAF) Defense Meteorological Satellite Program (DMS
 
 ## Sensor-Level (Raw) Data
 
-Raw data is available at `/data/raw/<format>/<year>`
+Raw data is available at `/data/raw/<format>`
 
 Available formats are:
-* `cdf` for [NASA CDF Format](https://cdf.gsfc.nasa.gov/)
-* `netcdf` for [Unidata NetCDF](https://www.unidata.ucar.edu/software/netcdf/)
+* `cdf` for [NASA CDF Format](https://cdf.gsfc.nasa.gov/), organized as `/data/raw/cdf/<year>/<month>`
+* `netcdf` for [Unidata NetCDF](https://www.unidata.ucar.edu/software/netcdf/), organized as `/data/raw/netcdf/year=<year>/month=<month>`
 
 This is the in-situ measurements of particle flux at the location of the DMSP spacecraft. Spacecraft position is provided in geographic (earth-centered-earth-fixed spherical) and geomagnetic coordinates. More information on this dataset is available in [Redmon et al. 2017](https://doi.org/10.1002/2016JA023339)
 
