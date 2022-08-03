@@ -1,3 +1,6 @@
+# Deprecation Notice
+The provider of this dataset will no longer maintain this dataset, and the historic data will no longer be available via the Registry of Open Data on AWS.  We are open to talking with anyone else who might be willing to provide this dataset to the community.  Contact <a href="mailto:opendata@amazon.com">opendata@amazon.com</a>
+
 # IRS 990 Filings on AWS
 
 Machine-readable data from certain electronic 990 forms filed with the IRS from 2011 to present are available for anyone to use via Amazon S3.
