@@ -24,7 +24,7 @@ Where:
 - `<NEXRAD Station>` is the NEXRAD ground station (map of ground stations)
 - `<filename>` is the name of the file containing the data. These are compressed files (compressed with gzip). The file name has more precise timestamp information.
 
-All files in the archive use the same compressed format (.gz). The data file names are, for example, `KAKQ20010101_080138.gz`. The file naming convention is:
+Files in the archive are in both .tar and compressed format (.gz). The compressed data file names are, for example, `KAKQ20010101_080138.gz`. The file naming convention is:
 
 `GGGGYYYYMMDD_TTTTTT`
 
@@ -37,6 +37,8 @@ Where:
 - `TTTTTT` = time when data started to be collected (GMT)
 
 Note that the 2015 files have an additional field on the file name. It adds “_V06” to the end of the file name. An example is `KABX20150303_001050_V06.gz`.
+
+Also note, files after 2016/06/02 no longer contain the .gz ending. An example is `KABX20160602_001050_V06`.
 
 The full historical archive from NOAA from June 1991 to present is available.
 
