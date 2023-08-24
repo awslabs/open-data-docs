@@ -10,9 +10,11 @@ KyFromAbove imagery and LiDAR on AWS is available ranging from 2012 to 2022. The
 
 ## Accessing KyFromAbove on AWS
 
-KyFromAbove imagery and LiDAR resources on AWS are managed by the Kentucky Division of Geographic Information. All KyFromAbove resources are available via a public bucket which means that users can access it freely.
+KyFromAbove imagery and LiDAR resources on AWS are managed by the Kentucky Division of Geographic Information. All KyFromAbove resources are available via a publicly accessible bucket which means that users can access it freely.
 
-The files are organized in a Kentucky-specific 5000x5000 foot grid (FIPS:1600) (EPSG:3089). Elevation data is available in Cloud Optimized GeoTIFF (COG) and Geopackage formats depending on the data type, raster or vector. Imagery data is available in Cloud Optimized GeoTIFF (COG) format. A Cloud Optimized GeoTIFF (COG) is a GeoTIFF file optimized for hosting on a HTTP file server. COG has an internal organization that enables more efficient workflows on the cloud by supporting HTTP GET range requests, where just parts of a file are requested and returned.
+The files are organized in a Kentucky-specific 5000x5000 foot grid (FIPS:1600) (EPSG:3089). Elevation data is available in Cloud Optimized GeoTIFF (COG) and Geopackage formats depending on the data type, raster or vector. Imagery data is available in Cloud Optimized GeoTIFF (COG) format. 
+
+A Cloud Optimized GeoTIFF (COG) is a GeoTIFF file optimized for hosting on a HTTP file server. COG has an internal organization that enables more efficient workflows on the cloud by supporting HTTP GET range requests, where just parts of a file are requested and returned.
 
 ## Imagery Data Directory Structure
 
@@ -31,15 +33,15 @@ The KyFromAbove imagery data resources are organized in folders based on data ty
 
 ### Acquisition Year and Resolution Folder Naming Conventions
 
-<b><u>Ortho Imagery: </u></b> Naming Convention: KY_KYAPED_Year_Resolution, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data" and Resolution = Value+Unit. Example: KY_KYAPED_2014_6IN.
+<b><u>Ortho Imagery: </u></b> KY_KYAPED_Year_Resolution, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, and Resolution = Value+Unit. Example: <code>KY_KYAPED_2014_6IN.</code>
 
-<b><u>Oblique Imagery: </u></b> Naming Convention: KY_KYAPED_Year_Resolution, ......
+<b><u>Oblique Imagery: </u></b> KY_KYAPED_Year_Season_Resolution, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, Season = Season1 = Spring and Season2 = Fall, and Resolution = Value+Unit. Example: <code>KY_KYAPED_2023_Season1_3IN.</code>
 
 ### File Naming Conventions
 
-<b><u>Ortho Imagery: </u></b> <code>tilename_year_resolution_cog.tif</code> Example: N013E284_2012_1FT_cog.tif - The ortho image for the extent of tile N013E284, acquired in 2012 at a 1-foot resolution.
+<b><u>Ortho Imagery: </u></b> <code>tilename_year_resolution_cog.tif</code> Example: <code>N013E284_2012_1FT_cog.tif</code> - The ortho image for the extent of tile N013E284, acquired in 2012 at a 1-foot resolution.
 
-<b><u>Oblique Imagery: </u></b> <code>direction_path_eventID.tif</code> Example: Fwd_978_587.tif ........
+<b><u>Oblique Imagery: </u></b> <code>direction_flightline_eventID.tif</code> Example: <code>Bwd_2033_8829.tif</code> - The forward facing oblique image, acquired in flight line 2033, with an eventID (capture instance) of 8829. Bwd, Fwd, Left, Right, and Color (nadir) are all valid oblique imagery file name prefixes. 
 
 ### Metadata and Tile Grid Folders
 
@@ -84,9 +86,9 @@ DGI developed an automated process to convert all existing Phase 1 and Phase 2 o
 
 <code>gdal_translate "<SourcePath>\<filename>" "<DestinationPath>\<filename>" -of COG -co COMPRESS=JPEG -co QUALITY=95 -co NUM_THREADS=32 -co OVERVIEWS=IGNORE_EXISTING -co BLOCKSIZE=256</code>
 
-NV5 and Sanborn converted the Phase 3 oblique imagery to COGs using the sample single-line command shown below.
+NV5/Sanborn converted the Phase 3, three-band, oblique and associated nadir images, to COGs using the sample single-line command shown below.
 
-<code>gdal translate . . . </code>
+<code>-b 1 -b 2 -b 3 "<SourcePath>\<filename>" "<DestinationPath>\<filename>" -of COG -co COMPRESS=JPEG -co BLOCKSIZE=512 -co QUALITY=95 -co NUM_THREADS=16 -co OVERVIEWS=IGNORE_EXISTING</code>
 
 ### Elevation Processing Information
 
@@ -114,4 +116,4 @@ or a command link
 
 <code>-------</code>
 
-<em>The KyFromABove S3 buckets can be accessed by anyone on the internet (Publicly Accessible).</em>
+<em>The KyFromAbove S3 buckets can be accessed by anyone on the internet (Publicly Accessible).</em>
