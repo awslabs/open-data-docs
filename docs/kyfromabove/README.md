@@ -4,8 +4,8 @@ KyFromAbove acquires aerial imagery and LiDAR during leaf-off conditions in the 
 
 The KyFromAbove program is administered by the Commonwealth Office of Technology, Office of Architecture and Governance, Division of Geographic Information.
 
-KyFromAbove imagery and LiDAR on AWS is available ranging from 2012 to 2022. These webmaps include tile-by-tile information regarding the year of acquisition.
-<a href="https://kygeonet.maps.arcgis.com/home/webmap/viewer.html?webmap=ba05e691cf3a4acd9583b12ccf09856e">KyFromAbove Imagery coverage map</a>
+KyFromAbove imagery and LiDAR on AWS is available ranging from 2012 to 2022. These webmaps include tile-by-tile information regarding the year of acquisition. <br>
+<a href="https://kygeonet.maps.arcgis.com/home/webmap/viewer.html?webmap=ba05e691cf3a4acd9583b12ccf09856e">KyFromAbove Imagery coverage map</a><br>
 <a href="https://kygeonet.maps.arcgis.com/home/webmap/viewer.html?webmap=785e6040154e4050bda80049fc12d4a6">KyFromAbove LiDAR coverage map</a>
 
 ## Accessing KyFromAbove on AWS
