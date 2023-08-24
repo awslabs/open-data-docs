@@ -18,7 +18,7 @@ The files are organized in a Kentucky-specific 5000x5000 foot grid (FIPS:1600) (
 
 *A [Cloud Optimized GeoTIFF](https://www.cogeo.org/) (COG) is a GeoTIFF file optimized for hosting on a HTTP file server. COG has an internal organization that enables more efficient workflows on the cloud by supporting HTTP GET range requests, where just parts of a file are requested and returned.*
 
-## Imagery Data Directory Structure
+## Imagery Folder Structure
 
 The KyFromAbove imagery data resources are organized in folders based on data type > project phase > year acquired > resolution, and by season beginning in Phase 3. Natural color orthoimagery (nadir) files are located in the <code>orthos/</code> subfolder and oblique imagery is located in the <code>obliques/</code> subfolder. Folders below that level are organized by project phase, and then by year and resolution. 
 
@@ -58,7 +58,7 @@ Metadata and tile grid folders can be found at the root level within each projec
 
 <b><u>TileGrid: </u></b> <code>TileGrid/</code> -  Geopackages that contain the name, file extents, phase and other information for each COG.
 
-## Elevation Data Directory Structure
+## Elevation Folder Structure
 
 The KyFromAbove elevation data resources are organized in folders based on data type > project phase. The year each tile was acquired can be found in the tile grid for that phase. 
 
