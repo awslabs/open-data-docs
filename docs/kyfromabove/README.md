@@ -1,8 +1,8 @@
 # KyFromAbove on AWS
 
-KyFromAbove acquires aerial imagery and LiDAR during leaf-off conditions in the Commonwealth. The imagery typically ranges from 6-inches to 3-inches in resolution and is available from the kyfromabove Amazon S3 bucket in a Cloud Optimized GeoTiff format. All Phase 2 LiDAR data acquired by the program is USGS Quality Level 2 (QL2), whereas approximately 40% of Phase 1 LiDAR data is considered QL3. Digital Elevation Models (DEMs) at a 5-foot (Phase 1) or 2-foot (Phase 2) resolution, point cloud data in an LAS format, spot elevations in a geopackage format, and contours in a geopackage format are also available from the kyfromabove Amazon S3 bucket. KyFromAbove LiDAR and imagery data resources are managed in a Kentucky-specific 5000x5000 foot grid (FIPS:1600) (EPSG:3089). Phase 1 and Phase 2 imagery acquisitions have been completed and Phase 3 is underway. Phase 1 LiDAR acquisitions have been completed and Phase 2 is over 85% complete. More details about the program can be found at (https://kyfromabove.ky.gov/)
+KyFromAbove acquires aerial imagery and LiDAR during leaf-off conditions in the Commonwealth. The imagery typically ranges from 6-inches to 3-inches in resolution and is available from the kyfromabove Amazon S3 bucket in a [Cloud Optimized GeoTiff](https://www.cogeo.org) format. All Phase 2 LiDAR data acquired by the program is [USGS Quality Level](https://www.usgs.gov/3d-elevation-program/topographic-data-quality-levels-qls) 2 (QL2), whereas approximately 40% of Phase 1 LiDAR data is considered QL3. Digital Elevation Models (DEMs) at a 5-foot (Phase 1) or 2-foot (Phase 2) resolution, point cloud data in an LAS format, spot elevations in a geopackage format, and contours in a geopackage format are also available from the kyfromabove Amazon S3 bucket. KyFromAbove LiDAR and imagery data resources are managed in a Kentucky-specific 5000x5000 foot grid (FIPS:1600) (EPSG:3089). Phase 1 and Phase 2 imagery acquisitions have been completed and Phase 3 is underway. Phase 1 LiDAR acquisitions have been completed and Phase 2 is over 85% complete. More details about the program can be found at (https://kyfromabove.ky.gov/)
 
-The KyFromAbove program is administered by the Commonwealth Office of Technology, Office of Architecture and Governance, Division of Geographic Information.
+The KyFromAbove program is administered by the Commonwealth Office of Technology, Office of Architecture and Governance, [Division of Geographic Information](https://technology.ky.gov/services-and-support/Pages/Enterprise-GIS.aspx).
 
 KyFromAbove imagery and LiDAR on AWS is available ranging from 2012 to 2022. These webmaps include tile-by-tile information regarding the year of acquisition. <br>
 <a href="https://kygeonet.maps.arcgis.com/home/webmap/viewer.html?webmap=ba05e691cf3a4acd9583b12ccf09856e">KyFromAbove Imagery coverage map</a><br>
@@ -20,7 +20,7 @@ A Cloud Optimized GeoTIFF (COG) is a GeoTIFF file optimized for hosting on a HTT
 
 The KyFromAbove imagery data resources are organized in folders based on data type > project phase > year acquired > resolution, and by season beginning in Phase 3. Natural color orthoimagery (nadir) files are located in the <code>orthos/</code> subfolder and oblique imagery is located in the <code>obliques/</code> subfolder. Folders below that level are organized by project phase, and then by year and resolution. 
 
-### Data Types
+### Data Type Folders
 
 <b><u>Orthos: </u></b> <code>orthos/</code> - KyFromAbove ortho imagery for the Commonwealth of Kentucky organized in a 5000x5000 foot grid. Each image tile has been converted to a Cloud Optimized GeoTiff format. Phase 1 and 2 data is organized by acquisition year and is currently available for use. Phase 3 will be provided upon completion of the project and will be organized by year and season, imagery is being acquired during the fall and spring leaf-off seasons as sun angle permits.
 
@@ -35,7 +35,7 @@ The KyFromAbove imagery data resources are organized in folders based on data ty
 
 <b><u>Ortho Imagery: </u></b> KY_KYAPED_Year_Resolution, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, and Resolution = Value+Unit. Example: <code>KY_KYAPED_2014_6IN.</code>
 
-<b><u>Oblique Imagery: </u></b> KY_KYAPED_Year_Season_Resolution, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, Season = Season1 = Spring and Season2 = Fall, and Resolution = Value+Unit. Example: <code>KY_KYAPED_2023_Season1_3IN.</code>
+<b><u>Oblique Imagery: </u></b> KY_KYAPED_Year_Season_Resolution, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, Season = Season1 for Spring or Season2 for Fall, and Resolution = Value+Unit. Example: <code>KY_KYAPED_2023_Season1_3IN.</code>
 
 ### File Naming Conventions
 
@@ -57,7 +57,7 @@ Metadata and tile grid folders can be found at the root level within each projec
 
 The KyFromAbove elevation data resources are organized in folders based on data type > project phase. The year each tile was acquired can be found in the tile grid for that phase. 
 
-### Data Types
+### Data Type Folders
 
 <b><u>Contours: </u></b> <code>Contours/</code> - Topographic contours created from the KyFromAbove Phase 1 LiDAR-derived digital elevation model (DEM) in a geopackage and Esri file geodatabase format. There are four data resources in this folder - 1) KyTopo contours at a 10-foot interval primarily for Western and Central Kentucky, 2) KyTopo contours at a 20-foot interval primarily for Central and Eastern Kentucky, 3) KyTopo contours at a 40-foot interval for Eastern Kentucky, and 4) KyTopo contours at a 5-foot interval for the entire Commonwealth.
 
@@ -84,17 +84,17 @@ Metadata and tile grid folders can be found at the root level within each projec
 
 DGI developed an automated process to convert all existing Phase 1 and Phase 2 orthoimagery GeoTIFFs to COGs. The process utilizes the Geospatial Data Abstract Library (GDAL) v3.5.3. Below is a sample single-line command for converting ortho imagery.
 
-<code>gdal_translate "<SourcePath>\<filename>" "<DestinationPath>\<filename>" -of COG -co COMPRESS=JPEG -co QUALITY=95 -co NUM_THREADS=32 -co OVERVIEWS=IGNORE_EXISTING -co BLOCKSIZE=256</code>
+<code>gdal_translate "SourcePath/filename" "DestinationPath/filename" -of COG -co COMPRESS=JPEG -co QUALITY=95 -co NUM_THREADS=32 -co OVERVIEWS=IGNORE_EXISTING -co BLOCKSIZE=256</code>
 
 NV5/Sanborn converted the Phase 3, three-band, oblique and associated nadir images, to COGs using the sample single-line command shown below.
 
-<code>-b 1 -b 2 -b 3 "<SourcePath>\<filename>" "<DestinationPath>\<filename>" -of COG -co COMPRESS=JPEG -co BLOCKSIZE=512 -co QUALITY=95 -co NUM_THREADS=16 -co OVERVIEWS=IGNORE_EXISTING</code>
+<code>-b 1 -b 2 -b 3 "SourcePath/filename" "DestinationPath/filename" -of COG -co COMPRESS=JPEG -co BLOCKSIZE=512 -co QUALITY=95 -co NUM_THREADS=16 -co OVERVIEWS=IGNORE_EXISTING</code>
 
 ### Elevation Processing Information
 
 DGI developed an automated process to convert all existing Phase 1 LiDAR-derived digital elevation models (DEMs) to COGs. The process utilizes the Geospatial Data Abstract Library (GDAL) v3.5.3. Below is a sample single-line command for converting the DEMs.
 
-<code>gdal_translate "<SourcePath>\<filename>" "<DestinationPath>\<filename>" -of COG -co COMPRESS=LZW -co NUM_THREADS=10 -co OVERVIEWS=IGNORE_EXISTING</code>
+<code>gdal_translate "SourcePath/filename" "DestinationPath/filename" -of COG -co COMPRESS=LZW -co NUM_THREADS=10 -co OVERVIEWS=IGNORE_EXISTING</code>
 
 It is important that a lossless compression option is used when creating COGs of digital elevation models (DEMs).
 
@@ -102,7 +102,7 @@ It is important that a lossless compression option is used when creating COGs of
 
 DGI uses Esri's stack of tools for the creation and maintenence of all enterprise-based geospatial data layers. QGIS was used to convert contours, spot elevations, and tile grids to a geopackage format for distribution on AWS. 
 
-### Access Manifest
+## Access Manifest
 
 To see the full list of available files, you can access the bucket manifest with the aws-cli (version 15 and above) command below:
 
