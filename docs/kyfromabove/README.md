@@ -29,19 +29,24 @@ The KyFromAbove imagery data resources are organized in folders based on data ty
 
 ### Project Phase Folder Naming Conventions
 
-<b><u>Project Phase: </u></b> Folders are used to organize the data by project phase.  Example: <code>Phase1/</code>
+<b><u>Project Phase: </u></b> Folders are used to organize the data by project phase.  
+Example: <code>Phase1/</code>
 
 ### Acquisition Year and Resolution Folder Naming Conventions
 
-<b><u>Ortho Imagery: </u></b> KY_KYAPED_Year_Resolution, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, and Resolution = Value+Unit. Example: <code>KY_KYAPED_2014_6IN.</code>
+<b><u>Ortho Imagery: </u></b> <code>KY_KYAPED_Year_Resolution</code>, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, and Resolution = Value+Unit.  
+Example: <code>KY_KYAPED_2014_6IN.</code>
 
-<b><u>Oblique Imagery: </u></b> KY_KYAPED_Year_Season_Resolution, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, Season = Season1 for Spring or Season2 for Fall, and Resolution = Value+Unit. Example: <code>KY_KYAPED_2023_Season1_3IN.</code>
+<b><u>Oblique Imagery: </u></b> <code>KY_KYAPED_Year_Season_Resolution</code>, where KY = Kentucky, KYAPED = "Kentucky Aerial Photography and Elevation Data", Year = calendar Year, Season = Season1 for Spring or Season2 for Fall, and Resolution = Value+Unit.  
+Example: <code>KY_KYAPED_2023_Season1_3IN.</code>
 
 ### File Naming Conventions
 
-<b><u>Ortho Imagery: </u></b> <code>tilename_year_resolution_cog.tif</code> Example: <code>N013E284_2012_1FT_cog.tif</code> - The ortho image for the extent of tile N013E284, acquired in 2012 at a 1-foot resolution.
+<b><u>Ortho Imagery: </u></b> <code>tilename_year_resolution_cog.tif</code>
+Example: <code>N013E284_2012_1FT_cog.tif</code> - *The ortho image for the extent of tile N013E284, acquired in 2012 at a 1-foot resolution.*<br>
 
-<b><u>Oblique Imagery: </u></b> <code>direction_flightline_eventID.tif</code> Example: <code>Bwd_2033_8829.tif</code> - The forward facing oblique image, acquired in flight line 2033, with an eventID (capture instance) of 8829. Bwd, Fwd, Left, Right, and Color (nadir) are all valid oblique imagery file name prefixes. 
+<b><u>Oblique Imagery: </u></b> <code>direction_flightline_eventID.tif</code>
+Example: <code>Bwd_2033_8829.tif</code> - *The forward facing oblique image, acquired in flight line 2033, with an eventID (capture instance) of 8829. Bwd, Fwd, Left, Right, and Color (nadir) are all valid oblique imagery file name prefixes.*
 
 ### Metadata and Tile Grid Folders
 
