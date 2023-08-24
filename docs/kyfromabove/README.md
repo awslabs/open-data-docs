@@ -77,6 +77,11 @@ The KyFromAbove elevation data resources are organized in folders based on data 
 <b><u>Project Phase: </u></b> Folders are used to organize the data by project phase.
 > Example: <code>Phase1/</code>
 
+### File Naming Conventions
+
+<b><u>Digital Elevation Models (DEMs): </u></b> <code>tilename_year_DEM_phase_cog.tif</code>, where tilename = 5K grid tilename, year = Year Acquired, DEM = Digital Elevation Model, phase = Project Phase, and cog = Cloud-Optimized GeoTIFF format.
+> Example: <code>N017E286_2011_DEM_Phase1_cog.tif</code> - *The elevation data for the extent of tile N017E286, acquired in 2011, during Phase 1, and in a COG format.*
+
 ### Metadata and Tile Grid Folders
 
 Metadata and tile grid folders can be found at the root level within each project phase folder.
@@ -108,18 +113,8 @@ Phase 1 LiDAR-derived digital elevation models (DEMs) were converted to COGs usi
 
 DGI uses Esri's stack of tools for the creation and maintenence of all enterprise-based geospatial data layers. QGIS was used to convert contours, spot elevations, and tile grids to a geopackage format for distribution on AWS. More information regarding the KyTopo Map series production process can be found [here](https://www.esri.com/about/newsroom/arcuser/kytopo-kentuckys-new-topographic-map-series/).
 
-## Access Manifest
+## More Information
 
-To see the full list of available files, you can access the bucket manifest with the aws-cli (version 15 and above) command below:
-
-<code>-------</code>
-
-<code>-------</code>
-
-<code>-------</code>
-
-or a command link
-
-<code>-------</code>
+More information can be found at [kyfromabove.ky.gov](https://kyfromabove.ky.gov).
 
 <em>The KyFromAbove S3 buckets can be accessed by anyone on the internet (Publicly Accessible).</em>
