@@ -41,7 +41,7 @@ The CO-OPS operational bucket contains the ensemble forecast data organized by d
 
 You can use the AWS Command Line Interface to list a particular day in the bucket like this:
 
- - aws s3 ls `noaa-nos-ofs-pds/OFS/netcdf/YYYYMM/`
+ - aws s3 ls --no-sign-request s3://noaa-ofs-pds/OFS/netcdf/YYYYMM/
 
  - Where `OFS` stands for Operational Forecast System, see table below
 
