@@ -24,7 +24,7 @@ Where `XX`  will be (00, 06, 12, 18) corresponding to the four forecasts publish
 
 The organisation of the contents of `/pgrb2a/` and `/pgrb2b/` are the same and the contents are structured as follows (substitute pgrb2b for pgrb2a when appropriate):
 
-The control run of the 21-member ensemble has output filenames that start  `gec00`:
+The control run of the 31-member ensemble has output filenames that start  `gec00`:
  - `gec00.tXXz.pgrb2aanl`
  - `gec00.tXXz.pgrb2afVV`
 
@@ -34,7 +34,7 @@ If you append the control run name onto the path you will get:
  - `noaa-gefs-pds/gefs.YYYYMMDD/XX/pgrb2b/gec00.tXXz.pgrb2aanl`
  - `noaa-gefs-pds/gefs.YYYYMMDD/XX/pgrb2b/gec00.tXXz. pgrb2afVV`
 
-The forecast data from the 20 other ensemble perturbations have filenames that start  with `gep`:
+The forecast data from the 30 other ensemble perturbations have filenames that start  with `gep`:
  - `gepWW.tXXz.pgrb2aanl`
  - `gepWW.tXXz.pgrb2afVV`
 
