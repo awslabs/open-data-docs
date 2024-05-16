@@ -101,6 +101,10 @@ NV5/Sanborn converted the Phase 3, three-band, oblique and associated nadir imag
 
 > <code>gdal_translate.exe -b 1 -b 2 -b 3 "SourcePath/filename" "DestinationPath/filename" -of COG -co COMPRESS=JPEG -co BLOCKSIZE=512 -co QUALITY=95 -co NUM_THREADS=16 -co OVERVIEWS=IGNORE_EXISTING</code>
 
+NV5 converted the Phase 3, four-band, ortho images, to COGs using the sample single-line command shown below.
+
+> <code>gdal_translate.exe -b 1 -b 2 -b 3 -b 4 "SourcePath/filename" "DestinationPath/filename" -of COG -co COMPRESS=JPEG -co BLOCKSIZE=512 -co QUALITY=95 -co NUM_THREADS=16 -co OVERVIEWS=IGNORE_EXISTING</code>
+
 ## Elevation Processing Information
 
 Phase 1 LiDAR-derived digital elevation models (DEMs) were converted to COGs using the Geospatial Data Abstract Library (GDAL) v3.5.3. Below is a sample single-line command used by DGI for converting the DEMs.
