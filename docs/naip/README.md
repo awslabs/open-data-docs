@@ -4,7 +4,7 @@ The National Agriculture Imagery Program (NAIP) acquires aerial imagery during t
 
 NAIP is administered through the USDA's Farm Production and Conservation Business Center (FPAC-BC) Geospatial Enterprise Operations (GEO) Branch.
 
-NAIP imagery on AWS is available ranging from 2010 to 2021. This <a href="http://www.arcgis.com/home/webmap/viewer.html?webmap=17944d45bbef42afb05a5652d7c28aa5">NAIP coverage map</a> can help to determine what data is available for each year.
+NAIP imagery on AWS is available ranging from 2010 to 2023. This <a href="http://www.arcgis.com/home/webmap/viewer.html?webmap=17944d45bbef42afb05a5652d7c28aa5">NAIP coverage map</a> can help to determine what data is available for each year.
 
 ## Accessing NAIP on AWS
 
@@ -44,7 +44,7 @@ MRF is a cloud-optimized open data format that provides fast access to data on S
 
 <code>gdaladdo -r average src_dataset 2 4 8 16 32 64</code>
 
-*Note: The data upto year 2015 was compressed using Lerc1 compression and for the year 2016, 2017, 2018, 2019, 2020 and 2021 Lerc2 compression was used. Click <a href="https://github.com/Esri/lerc">here</a> for more info on Lerc compression.*
+*Note: The data upto year 2015 was compressed using Lerc1 compression and for the year 2016, 2017, 2018, 2019, 2020, 2021, 2022 and 2023 Lerc2 compression was used. Click <a href="https://github.com/Esri/lerc">here</a> for more info on Lerc compression.*
 
 The Cloud Optimized GeoTIFF's (COG's) have been compressed using Deflate compression and are provided as 512x512 tiles with pyramids created using 2x sampling by averaging. These files were created using gdal_translate with the following command:
 
