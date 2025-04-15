@@ -1,10 +1,10 @@
 # KyFromAbove on AWS
 
-KyFromAbove acquires aerial imagery and LiDAR during leaf-off conditions in the Commonwealth. The imagery typically ranges from 6-inches to 3-inches in resolution and is available from the kyfromabove Amazon S3 bucket in a [Cloud Optimized GeoTiff](https://www.cogeo.org) format. All Phase 2 LiDAR data acquired by the program is [USGS Quality Level](https://www.usgs.gov/3d-elevation-program/topographic-data-quality-levels-qls) 2 (QL2), whereas approximately 40% of Phase 1 LiDAR data is considered QL3. Digital Elevation Models (DEMs) at a 5-foot (Phase 1) or 2-foot (Phase 2) resolution, point cloud data in an LAS format, spot elevations in a geopackage format, and contours in a geopackage format are also available from the kyfromabove Amazon S3 bucket. KyFromAbove LiDAR and imagery data resources are managed in a Kentucky-specific 5000x5000 foot grid (FIPS:1600) (EPSG:3089). Phase 1 and Phase 2 imagery acquisitions have been completed and Phase 3 is underway. Phase 1 LiDAR acquisitions have been completed and Phase 2 was completed in February of 2024. More details about the program can be found at <https://kyfromabove.ky.gov/>
+KyFromAbove acquires aerial imagery and LiDAR during leaf-off conditions in the Commonwealth. The imagery typically ranges from 6-inches to 3-inches in resolution and is available from the kyfromabove Amazon S3 bucket in a [Cloud Optimized GeoTiff](https://www.cogeo.org) format. All Phase 2 LiDAR data acquired by the program is [USGS Quality Level](https://www.usgs.gov/3d-elevation-program/topographic-data-quality-levels-qls) 2 (QL2), whereas approximately 40% of Phase 1 LiDAR data is considered QL3. Digital Elevation Models (DEMs) at a 5-foot (Phase 1) or 2-foot (Phase 2) resolution, point cloud data in an LAS format, spot elevations in a geopackage format, and contours in a geopackage format are also available from the kyfromabove Amazon S3 bucket. KyFromAbove LiDAR and imagery data resources are managed in a Kentucky-specific 5000x5000 foot grid (FIPS:1600) (EPSG:3089). Phase 1, Phase2, and Phase 3 imagery acquisitions have been completed. Phase 1 LiDAR acquisitions have been completed and Phase 2 was completed in February of 2024. Phase 3 LiDAR acquistions have been initiated. More details about the program can be found at <https://kyfromabove.ky.gov/>
 
 The KyFromAbove program is administered by the Commonwealth Office of Technology, Office of Architecture and Governance, [Division of Geographic Information](https://technology.ky.gov/services-and-support/Pages/Enterprise-GIS.aspx) (DGI).
 
-KyFromAbove imagery and LiDAR on AWS is available ranging from 2012 to 2022. The two webmaps below include tile-by-tile information regarding the year of acquisition, tilename, and extent. <br>
+KyFromAbove imagery and LiDAR on AWS is available ranging from 2012 to 2024. The two webmaps below include tile-by-tile information regarding the year of acquisition, tilename, and extent. <br>
 - <a href="https://kygeonet.maps.arcgis.com/home/webmap/viewer.html?webmap=ba05e691cf3a4acd9583b12ccf09856e">KyFromAbove Imagery coverage map</a><br>
 - <a href="https://kygeonet.maps.arcgis.com/home/webmap/viewer.html?webmap=785e6040154e4050bda80049fc12d4a6">KyFromAbove LiDAR coverage map</a>
 
@@ -59,7 +59,7 @@ Metadata and tile grid folders can be found at the root level within each projec
 
 <b><u>Metadata: </u></b> <code>Metadata/</code> - Project-level metadata files in XML format for each year during a given project phase.
 
-<b><u>TileGrid: </u></b> <code>TileGrid/</code> -  Geopackages that contain the name, file extents, phase and other information for each COG.
+<b><u>TileGrid: </u></b> <code>TileGrid/</code> - Geopackages that contain the name, file extents, phase and other information for each COG.
 
 ## Elevation Folder Structure
 
