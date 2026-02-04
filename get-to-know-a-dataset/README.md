@@ -24,7 +24,7 @@ jupyter nbconvert --clear-output --inplace YOUR-NOTEBOOK.ipynb
 ```yaml
 DataAtWork:
   Tutorials:
-    - Title: Get To Know A Dataset - MYDATASET
+    - Title: Get To Know A Dataset - DATASETNAME
       URL: https://github.com/EXAMPLE/MYDATASET-DOCS/get-to-know-a-dataset-MYDATASET.ipynb
       NotebookURL: https://github.com/EXAMPLE/MYDATASET-DOCS/get-to-know-a-dataset-MYDATASET.ipynb
       AuthorName: AUTHOR NAME
