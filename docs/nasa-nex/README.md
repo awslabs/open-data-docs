@@ -1,6 +1,6 @@
 # NASA NEX
 
-[NASA NEX](https://nex.nasa.gov/nex/) is a collaboration and analytical platform that combines state-of-the-art supercomputing, Earth system modeling, workflow management and NASA remote-sensing data. Through NEX, users can explore and analyze large Earth science datasets, run and share modeling algorithms, collaborate on new or existing projects and exchange workflows and results within and among other science communities.
+[NASA NEX](https://www.nasa.gov/nasa-earth-exchange-nex/) is a collaboration and analytical platform that combines state-of-the-art supercomputing, Earth system modeling, workflow management and NASA remote-sensing data. Through NEX, users can explore and analyze large Earth science datasets, run and share modeling algorithms, collaborate on new or existing projects and exchange workflows and results within and among other science communities.
 
 Three NASA NEX datasets are now available to all via Amazon S3. One dataset, the NEX downscaled climate simulations, provides high-resolution climate change projections for the 48 contiguous U.S. states. The second dataset, provided by the Moderate Resolution Imaging Spectroradiometer (MODIS) instrument on NASA's Terra and Aqua satellites, offers a global view of Earth's surface every 1 to 2 days. Finally, the Landsat data record from the U.S. Geological Survey provides the longest existing continuous space-based record of Earth's land.
 
