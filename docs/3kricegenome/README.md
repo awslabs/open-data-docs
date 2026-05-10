@@ -1,11 +1,11 @@
 # 3000 Rice Genome on AWS
 
 
-The 3000 Rice Genome Project is an international effort to sequence the genomes of 3,024 rice varieties from 89 countries. The collaborating organizations are comprised of the [Chinese Academy of Agricultural Sciences](http://www.caas.cn/en/), [BGI Shenzhen](http://www.genomics.cn/index), and the [International Rice Research Institute (IRRI)](http://irri.org/). Rice is the leading food source across the globe, and is a vital crop to study to address food security and other global issues. Through analysis of these genomes, researchers can potentially identify genes for important agronomic traits such as better nutrition, climate change tolerance, and disease resistance.
+The 3000 Rice Genome Project is an international effort to sequence the genomes of 3,024 rice varieties from 89 countries. The collaborating organizations are comprised of the [Chinese Academy of Agricultural Sciences](http://www.caas.cn/en/), [BGI Shenzhen](http://www.genomics.cn/index), and the [International Rice Research Institute (IRRI)](https://www.irri.org/). Rice is the leading food source across the globe, and is a vital crop to study to address food security and other global issues. Through analysis of these genomes, researchers can potentially identify genes for important agronomic traits such as better nutrition, climate change tolerance, and disease resistance.
 
 AWS has made the 3000 Rice Genome data freely available on Amazon S3 so that anyone can use our on-demand computing resources to perform analysis and create new products without needing to worry about the cost of storing the data or the time required to download it.
 
-For more information about the 3000 Rice Genomes Project, please visit [http://iric.irri.org/resources/3000-genomes-project](http://iric.irri.org/resources/3000-genomes-project).  
+For more information about the 3000 Rice Genomes Project, please visit [https://iric.irri.org/projects/3000-rice-genomes-project](https://iric.irri.org/projects/3000-rice-genomes-project).  
 
 ## Accessing 3000 Rice Genome Data on AWS
 
@@ -25,16 +25,16 @@ The data are organized using a simple directory structure based on the reference
 
 Or:
 
-[http://s3.amazonaws.com/3kricegenome/9311/IRIS_313–15896.realigned.bam](http://s3.amazonaws.com/3kricegenome/9311/IRIS_313–15896.realigned.bam)
+[https://3kricegenome.s3.us-east-1.amazonaws.com/9311/IRIS_313–15896.realigned.bam](https://3kricegenome.s3.us-east-1.amazonaws.com/9311/IRIS_313–15896.realigned.bam)
 
-[http://s3.amazonaws.com/3kricegenome/9311/IRIS_313–15896.snp.vcf.gz](http://s3.amazonaws.com/3kricegenome/9311/IRIS_313–15896.snp.vcf.gz)
+[https://3kricegenome.s3.us-east-1.amazonaws.com/9311/IRIS_313–15896.snp.vcf.gz](https://3kricegenome.s3.us-east-1.amazonaws.com/9311/IRIS_313–15896.snp.vcf.gz)
 
 The index of BAM and VCF files are co-located for fast random access of files. As an example, here we query for alignments on chromosome 1 from position 1000 to 1100 using samtools:
 
 ```
 # Query for the chromosome 1 from base position 1000 to 1100
 
-samtools view http://s3.amazonaws.com/3kricegenome/9311/IRIS_313-15896.realigned.bam 9311_chr01:1000-1100
+samtools view https://3kricegenome.s3.us-east-1.amazonaws.com/9311/IRIS_313-15896.realigned.bam 9311_chr01:1000-1100
 ```
 
 Experimental metadata for the study are available via the original publication (`doi:10.1186/2047-217X-3-7`). Summarized experimental metadata is available in [ISATAB format](http://www.isa-tools.org/format/specification/) at:
@@ -43,7 +43,7 @@ Experimental metadata for the study are available via the original publication (
 
 Or:
 
-[http://s3.amazonaws.com/3kricegenome/ERP005654.zip](http://s3.amazonaws.com/3kricegenome/ERP005654.zip)
+[https://3kricegenome.s3.us-east-1.amazonaws.com/ERP005654.zip](https://3kricegenome.s3.us-east-1.amazonaws.com/ERP005654.zip)
 
 A manifest of all files in the bucket is also available at:
 
@@ -51,7 +51,7 @@ A manifest of all files in the bucket is also available at:
 
 Or:
 
-[http://s3.amazonaws.com/3kricegenome/MANIFEST](http://s3.amazonaws.com/3kricegenome/MANIFEST)
+[https://3kricegenome.s3.us-east-1.amazonaws.com/MANIFEST](https://3kricegenome.s3.us-east-1.amazonaws.com/MANIFEST)
 
 Source sequence data, as well as more details on the experimental data, are available from the Sequence Read Archives (SRA) at [NCBI (USA)](http://www.ncbi.nlm.nih.gov/sra/?term=PRJEB6180), [EBI (Europe)](http://www.ebi.ac.uk/ena/data/view/PRJEB6180), and [DDBJ (Asia)](http://trace.ddbj.nig.ac.jp/DRASearch/study?acc=ERP005654).
 
