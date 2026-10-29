@@ -1,6 +1,6 @@
 # NAIP on AWS
 
-The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental United States. This &ldquo;leaf-on&rdquo; imagery typically ranges from 30 centimeters to 100 centimeters in resolution and is available from the **naip-analytic** Amazon S3 bucket as 4-band (RGB + NIR) imagery in <a href="https://github.com/nasa-gibs/mrf/blob/master/src/gdal_mrf/frmts/mrf/MUG.md">MRF</a> format, in **naip-source** Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and **naip-visualization** as 3-band (RGB) Cloud Optimized GeotTiff format. NAIP data is provided state by state at varying time intervals. Each year, a variable number of states are updated with an overall update cycle of every two to three years for each state.
+The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental United States. This &ldquo;leaf-on&rdquo; imagery typically ranges from 30 centimeters to 100 centimeters in resolution and is available from the **naip-analytic** Amazon S3 bucket as 4-band (RGB + NIR) imagery in <a href="https://github.com/nasa-gibs/mrf/blob/master/src/gdal_mrf/frmts/mrf/MUG.md">MRF</a> format, in **naip-source** Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTIFF format and **naip-visualization** as 3-band (RGB) Cloud Optimized GeoTIFF format. NAIP data is provided state by state at varying time intervals. Each year, a variable number of states are updated with an overall update cycle of every two to three years for each state.
 
 NAIP is administered through the USDA's Farm Production and Conservation Business Center (FPAC-BC) Geospatial Enterprise Operations (GEO) Branch.
 
@@ -8,7 +8,7 @@ NAIP imagery on AWS is available ranging from 2010 to 2023. This <a href="http:/
 
 ## Accessing NAIP on AWS
 
-NAIP imagery on AWS, is managed by Esri and includes various products and formats. All NAIP imagery is provided in a Requester Pays bucket, which means that users can access it freely within the us-west-2 region, but will incur charges when accessing/downloading outside the region. More information on <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html">Requeter Pays</a>.
+NAIP imagery on AWS, is managed by Esri and includes various products and formats. All NAIP imagery is provided in a Requester Pays bucket, which means that users can access it freely within the us-west-2 region, but will incur charges when accessing/downloading outside the region. More information on <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html">Requester Pays</a>.
 
 The files are provided as digital ortho quarter quad tiles (DOQQs). Each individual tile covers a 3.75 x 3.75 minute quarter quadrangle plus a 300 meter buffer on all four sides. The DOQQs are provided as GeoTIFF, and each tile area corresponds to a USGS topographic quadrangle. All individual DOQQs are rectified in the UTM coordinate system, NAD 83. Some states, due to their size and location, span more than one UTM zone. Users should note that data volumes for individual states can be large. For the raw and analytic products, a single state for a single year is commonly comprised of multiple terabytes of imagery.
 
